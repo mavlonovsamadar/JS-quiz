@@ -1,31 +1,17 @@
-// #1_return_sum
-
-// let num1 = +prompt("birinchi sonni kiriting")
-// let num2 = +prompt("ikkinchi sonni kiriting")
-// let num3 = prompt("+");
-
-// if(num3 == "+"){
-//     alert(num1 + num2);
-// }
-
-//#2_return_next_number
-
-// let num = +prompt("sonni kiriting")
-// if(num == num){
-//     alert(num + 1);
-// }
-// else{
-//     alert('sonni kiriting');
-// }
-
-
-//#3_convert_age_to_days
-
-let age = prompt("yoshingizni kiriting")
-
-function add(age) {
-    if(age = age){
-        alert(age * 365);
+let obj = {
+    name: "Samandar",
+    age: 30,
+    food: "osh",
+    mine(){
+        let person = {
+            firstName: "Mavlonov",
+            address: "Olmaliq",
+            family(){
+                let arr = [6, 2, "Dadam", "ayam",  "ayolim", "farzandlarim"]
+                alert("Mening ismim " + obj.name + " Familyam " + person.firstName + ", Yoshim " + obj.age + "da. " + "Mening oilam " + arr[0] + " kishidan iborat. Ular: " + arr[2] + ", " + arr[3] + ", " + arr[4] + ", " + " va " + arr[1] + " nafar " + arr[5]);
+            }
+        }
+        person.family()
     }
 }
-add(age)
+obj.mine()
